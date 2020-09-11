@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Componentes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <h2>Formulario de pago</h2>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <h4>Esto es un ejemplo de formulario de pago</h4>
+            </div>
+
+            <div class="container col-8">
+                <form class="row">
+                    <div class="form-group col-12">
+                        <h4> Direccion de facturación</h4>
+                    </div>
+                    <div class="form-group col-6">
+                        <label class="font-weight-bold">Nombre</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group col-6">
+                        <label class="font-weight-bold">Apellidos</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group col-12">
+                        <label class="font-weight-bold">Usuario</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form-group col-12">
+                        <label class="font-weight-bold">Email </label><span> (Opcional)</span>
+                        <input class="form-control" type="email" placeholder="correo@lasallenoroeste.edu.mx">
+                    </div>
+                    <div class="form-group col-12">
+                        <label class="font-weight-bold">Dirección de envio</label>
+                        <input class="form-control" type="text" placeholder="Veracruz S/N">
+                    </div>
+                    <div class="form-group col-12">
+                        <label class="font-weight-bold">Dirección 2 </label><span> (Opcional)</span>
+                        <input class="form-control" type="text" placeholder="Número interior, Suite">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="inputCountry" class="font-weight-bold">País</label>
+                        <select name="" id="inputCountry" class="form-control">
+                          <option selected>Elegir</option>
+                          <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="inputState" class="font-weight-bold">Estado</label>
+                        <select name="" id="inputState" class="form-control">
+                          <option selected>Elegir</option>
+                          <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="inputZip" class="font-weight-bold">Codigo postal</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group row col-12">
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                            Mi dirección de entrega es la misma que la de facturción
+                          </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row col-12">
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                            Guardar esta informacion para la proxima ocasion
+                          </label>
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset class="form-group col-12">
+                        <h4>Pago</h4>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                              Tarjeta de credito
+                            </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                              Tarjeta de debito
+                            </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                    <label class="form-check-label" for="gridRadios3">
+                              Paypal
+                            </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group col-6 row container">
+                        <div class="form-group col-12">
+                            <label class="font-weight-bold">Nombre de la tarjeta</label>
+                            <input class="form-control" type="text" placeholder="">
+                            <small class="form-text text-muted">Nombre completo como aparece en la terjeta</small>
+                        </div>
+                        <div class="form-group col-6">
+                            <label class="font-weight-bold">Expiración</label>
+                            <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <div class="form-group col-6">
+                            <label class="font-weight-bold">CVV</label>
+                            <input class="form-control" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group col-6 row">
+                        <div class="form-group col-12">
+                            <label class="font-weight-bold">Numero de tarjeta</label>
+                            <input class="form-control" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group col-12">
+                        <button class="btn btn-primary btn-block">Continuar con el pago</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-4">
+                <form class="row container">
+                    <div class="form-group col-12 d-flex justify-content-between">
+                        <h4 class="text-secondary">Carrito</h4>
+                        <h4><span class="badge badge-secondary badge-pill"> 3</span></h4>
+                    </div>
+                    <div class="card col-12" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item ">
+                                <div class="d-flex justify-content-between">
+                                    <h5>Mollete</h5>
+                                    <h5><span class="text-secondary"> $20</span></h5>
+                                </div>
+                                <p class="text-secondary">Delicioso pan con frijol cubierto de queso derretido</p>
+                            </li>
+                            <li class="list-group-item ">
+                                <div class="d-flex justify-content-between">
+                                    <h5>Coca de vidrio</h5>
+                                    <h5><span class="text-secondary"> $15</span></h5>
+                                </div>
+                                <p class="text-secondary">Dulce elixir de los dioses contenido en una botella de cristal para conservar al maximo su sabor</p>
+                            </li>
+                            <li class="list-group-item ">
+                                <div class="d-flex justify-content-between">
+                                    <h5>Gansito</h5>
+                                    <h5><span class="text-secondary"> $15</span></h5>
+                                </div>
+                                <p class="text-secondary">Dulce pastelito relleno de fresa y crema con cubierta de chocolate. Recuerdame!</p>
+                            </li>
+                            <li class="list-group-item ">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="text-success">Cupón</h5>
+                                    <h5><span class="text-success"> -$5</span></h5>
+                                </div>
+                                <p class="text-success">COVID19</p>
+                            </li>
+                            <li class="list-group-item ">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="">Total (MXN)</h5>
+                                    <h5><span class="font-weight-bold"> $45</span></h5>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="card col-12 mt-4" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item ">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class=""><button class="btn btn-secondary"> Ingresar</button></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Codigo de cupón">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
